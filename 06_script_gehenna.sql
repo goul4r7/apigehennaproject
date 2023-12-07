@@ -17,15 +17,15 @@ create table filmes (
 );
 
 insert into filmes (titulo, sinopse, data_estreia, categoria) 
-values ('O Palhaço da Meia Noite: Curta Metragem', 'Em uma noite aparentemente normal, um encontro inesperado transforma o normal em paranóia','2022-11-02', 1)
+values ('O Palhaço da Meia Noite: Curta Metragem', 'Em uma noite aparentemente normal, um encontro inesperado transforma o normal em paranoia','2022-11-02', 1)
 returning codigo, titulo, sinopse, data_estreia, categoria;
 
 insert into filmes (titulo, sinopse, data_estreia, categoria) 
-values ('A Loira do Banheiro', 'Um grupo de três amigos inconsequentes decidem que tentar fazer um ritual para conjurar a Loira do Banheiro é uma boa ideia para o Halloween','2022-06-02', 1)
+values ('A Loira do Banheiro', 'Um grupo de três amigos inconsequentes decidem tentar fazer um ritual para conjurar a Loira do Banheiro','2022-06-02', 1)
 returning codigo, titulo, sinopse, data_estreia, categoria;
 
 insert into filmes (titulo, sinopse, data_estreia, categoria) 
-values ('A Boneca', 'Quando sua rotina diária é interrompida por atividades estranhas, Ana se vê numa crescente paranóia para desvendar uma presença aterrorizante', null, 3)
+values ('A Boneca', 'Ana se vê numa crescente paranoia para desvendar uma presença aterrorizante', null, 3)
 returning codigo, titulo, sinopse, data_estreia, categoria
 
 select * from filmes
